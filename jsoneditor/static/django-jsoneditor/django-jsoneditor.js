@@ -50,6 +50,14 @@ django.jQuery(function () {
                     editor.setText(value);
                 }
 
+                ro = new ResizeObserver((entries, observer) => {
+                    if (editor.mode == "code") {
+                        editor.aceEditor.resize();
+                    }
+                });
+
+                ro.observe(nxt);
+
                 // If initialized in code mode, set ace options right away
                 if (editor.mode == 'code') {
                     editor.aceEditor.setOptions(django_jsoneditor_ace_options);
