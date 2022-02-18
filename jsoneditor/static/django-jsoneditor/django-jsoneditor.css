@@ -1,6 +1,4 @@
 div .outer_jsoneditor {
-    float: left;
-    width: 90%;
     resize: vertical;
     overflow: auto;
     max-width: 100%;
