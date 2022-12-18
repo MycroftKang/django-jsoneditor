@@ -5,3 +5,7 @@ div .outer_jsoneditor {
     min-height: 212px;
     height: 318px;
 }
+
+textarea .jsoneditor-text {
+    min-height: 100%;
+}
